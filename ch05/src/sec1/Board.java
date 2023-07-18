@@ -1,24 +1,15 @@
 package sec1;
 
-public abstract class Board {
+public class Board {
     private int no;
     private String title;
     private String content;
     private String resdate;
-    private int viewcount;
-
-
-    public void Qna(){ }
-    public void Qna(int no) {this.no = no;}
-
-    public void Qna(int no, String title) {
-        this.no = no;
-        this.title = title;
-    }
+    private int viewcnt;
 
     public Board() { }
 
-    public Board(int no) {this.no = no;}
+    public Board(int no) { this.no = no; }
 
     public Board(int no, String title) {
         this.no = no;
@@ -38,12 +29,12 @@ public abstract class Board {
         this.resdate = resdate;
     }
 
-    public Board(int no, String title, String content, String resdate, int viewcount) {
+    public Board(int no, String title, String content, String resdate, int viewcnt) {
         this.no = no;
         this.title = title;
         this.content = content;
         this.resdate = resdate;
-        this.viewcount = viewcount;
+        this.viewcnt = viewcnt;
     }
 
     public int getNo() {
@@ -78,13 +69,23 @@ public abstract class Board {
         this.resdate = resdate;
     }
 
-    public int getViewcount() {
-        return viewcount;
+    public int getViewcnt() {
+        return viewcnt;
     }
 
-    public void setViewcount(int viewcount) {
-        this.viewcount = viewcount;
+    public void setViewcnt(int viewcnt) {
+        this.viewcnt = viewcnt;
     }
 
-    public abstract void method2();
+    public final static void method1(){
+        System.out.println("여기는 Board입니다.");
+    }
+
+    public void method2(){
+        System.out.println("여기는 Board2입니다.");
+    }
+
+    public static void method3(){
+        System.out.println("여기는 Board3입니다.");
+    }
 }

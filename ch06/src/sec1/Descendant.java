@@ -1,16 +1,15 @@
 package sec1;
 
-public class Descendant extends Man{
+public class Descendant extends Man {
+    @Override
+    public void method1() {  System.out.println("후손 메소드1"); }
 
     @Override
-    public void method1() {System.out.println("후손");}
+    public int method2() { return 3;    }
 
     @Override
-    public int method2() {return 3;}
+    public void method3(int no) { System.out.println("후손 메소드3 : "+no);  }
 
     @Override
-    public void method3(int no) {System.out.println("후손메소드3: "+no);}
-
-    @Override
-    public int method4(int no) {return no+2;}
+    public int method4(int no) { return no+2;}
 }

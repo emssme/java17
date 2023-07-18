@@ -1,15 +1,22 @@
 package sec1;
-class Student{
-
-}
 public class Score {
-    private  int num;
+    private int num;
     private String name;
     private int kor;
     private int eng;
     private int mat;
 
-    public Score(int num, String name){
+    public Score(){ }
+
+    public Score(int num) {
+        this.num = num;
+    }
+
+    public Score(String name) {
+        this.num = num;
+    }
+
+    public Score(int num, String name) {
         this.num = num;
         this.name = name;
     }
@@ -73,6 +80,15 @@ public class Score {
 
     public void setMat(int mat) {
         this.mat = mat;
+    }
+
+    public void prtNum(int num){
+        System.out.println("학번 : "+num);
+    }
+
+    public void prtNum(String num){ //scope(유효범위)
+        this.setNum(1004);
+        System.out.println("이름 : "+num);
     }
 }
 

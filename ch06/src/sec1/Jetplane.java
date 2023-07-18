@@ -4,7 +4,7 @@ package sec1;
 //클래스->클래스, 인터페이스->인터페이스
 //implements
 //인터페이스->클래스, 다중상속
-public interface Jetplane extends Flying{
-    //method1() ~ method4() 추상화 된 채로 상속 받음
+public interface Jetplane extends Flying {
+    //method1()~method4() 추상화된 체로 상속 받음
     public void method9();
 }
