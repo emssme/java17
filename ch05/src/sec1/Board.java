@@ -1,6 +1,6 @@
 package sec1;
 
-public class Board {
+public abstract class Board {
     private int no;
     private String title;
     private String content;
@@ -85,4 +85,6 @@ public class Board {
     public void setViewcount(int viewcount) {
         this.viewcount = viewcount;
     }
+
+    public abstract void method2();
 }

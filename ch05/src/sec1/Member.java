@@ -1,7 +1,7 @@
 package sec1;
 
 public class Member {
-    private String id ;
+    private String id;
     private String pw;
     private String name;
     private String email;
@@ -9,23 +9,24 @@ public class Member {
     private String birth;
     private int point;
 
-    public Member() { this("kim");} //생성자
+    public Member() { this("kim"); }
     public Member(String id){
-        this(id,"1234");
+        this(id, "1234");
     }
     public Member(String id, String pw){
         this(id, pw, "kitae");
     }
     public Member(String id, String pw, String name){
-        this(id, pw, name, "kkt@naver.com");
+        this(id, pw, name, "kkt09072@naver.com");
     }
-    public Member(String id, String pw, String name, String email){
-        this(id, pw, name, email, "000-0000-0000");
+    public Member(String id,  String pw, String name, String email){
+        this(id, pw, name, email, "010-2848-7979");
     }
-    public Member(String id, String pw, String name, String email, String tel){
-        this(id, pw, name, email, tel,"0000-00-00");
+
+    public Member(String id, String pw, String name, String email, String tel) {
+        this(id, pw, name, email, tel, "2001-09-17");
     }
-    public Member(String id, String pw, String name, String email, String tel, String birth){
+    public Member(String id, String pw, String name, String email, String tel, String birth) {
         this(id, pw, name, email, tel, birth, 100);
     }
 
@@ -38,7 +39,6 @@ public class Member {
         this.birth = birth;
         this.point = point;
     }
-
 
     public String getId() {
         return id;
