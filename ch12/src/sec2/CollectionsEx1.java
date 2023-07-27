@@ -51,5 +51,6 @@ public class CollectionsEx1 {
         System.out.println("끼니 수: "+ (lifeDay*3));
 
 
+
     }
 }
